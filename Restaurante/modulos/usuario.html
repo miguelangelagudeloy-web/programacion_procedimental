@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@1.0.4/css/bulma.min.css"
+    />
+    <title>Document</title>
+</head>
+<body>
+    <!--nombre
+    apellido
+    tipo de documento
+    numero de documento
+    telefono
+    correo electronico
+    genero
+    cargo
+    fecha de nacimiento
+    contraseña-->
+<div class="control">
+    <label class="label">Tipo de documento</label> <br>
+  <input class="input" type="text" placeholder="nombre">
+</div>
+
+<div class="control">
+    <label class="label">Tipo de documento</label>  <br>
+  <input class="input" type="text" placeholder="apellido">
+</div>
+
+<div class="field">
+  <label class="label">Tipo de documento</label>
+  <div class="control">
+    <div class="select">
+      <select>
+        <option>C.C</option>
+        <option>T.I</option>
+        <option>otro</option>
+      </select>
+    </div>
+  </div>
+</div>
+
+<div class="control">
+  <label class="label">Numero de documento</label>   <br>  
+  <input class="input" type="number" placeholder="numero de documento">
+</div>
+
+  <label class="label">Telefono</label>
+<div class="field is-horizontal">
+  <div class="field-label"></div>
+  <div class="field-body">
+    <div class="field is-expanded">
+      <div class="field has-addons">
+        <p class="control">
+          <a class="button is-static">
+            +57
+          </a>
+        </p>
+        <p class="control is-expanded">
+          <input class="input" type="tel" placeholder="Tu telefono">
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<label class="label">correo electronico</label> 
+<div class="field has-addons"> 
+  <p class="control">
+    <input class="input" type="text" placeholder="tu correo">
+  </p> 
+  <p class="control">
+    <a class="button is-static">
+      @gmail.com
+    </a>
+  </p>
+</div>
+
+<div class="field">
+  <label class="label">Genero</label>
+  <div class="control">
+    <div class="select">
+      <select>
+        <option>masculino</option>
+        <option>femenino</option>
+      </select>
+    </div>
+  </div>
+</div>
+
+<div class="control">
+    <label class="label">cargo</label> <br>
+  <input class="input" type="text" placeholder="cargo">
+</div>
+
+<div class="control">
+     <label class="label">fecha de nacimiento</label> <br>
+  <input class="input" type="date" placeholder="fecha de nacimiento">
+</div>
+
+<div class="field">
+  <p class="control has-icons-left">
+    <label class="label">contraseña</label> <br>
+    <input class="input" type="password" placeholder="contraseña">
+    <span class="icon is-small is-left">
+      <i class="fas fa-lock"></i>
+    </span>
+  </p>
+</div>
+
+</body>
+</html>
