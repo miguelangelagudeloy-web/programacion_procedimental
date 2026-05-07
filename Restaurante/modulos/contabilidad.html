@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contabilidad</title>
+  <link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+
+  <style>
+    body{
+      background: linear-gradient(135deg, #dfe9f3, #ffffff);
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 30px;
+    }
+
+    .contenedor{
+      width: 1000px;
+      background: white;
+      border-radius: 20px;
+      padding: 30px;
+      box-shadow: 0px 10px 25px rgba(0,0,0,0.2);
+    }
+
+    .titulo{
+      font-size: 40px;
+      font-weight: bold;
+      text-align: center;
+      margin-bottom: 30px;
+      color: #363636;
+      border-bottom: 3px solid #00d1b2;
+      padding-bottom: 15px;
+    }
+
+    .perfil{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .foto{
+      width: 220px;
+      height: 220px;
+      border-radius: 50%;
+      overflow: hidden;
+      border: 6px solid #00d1b2;
+      margin-bottom: 20px;
+      box-shadow: 0px 5px 15px rgba(0,0,0,0.2);
+    }
+
+    .foto img{
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .box-formulario{
+      border-radius: 20px;
+      box-shadow: 0px 5px 15px rgba(0,0,0,0.1);
+    }
+
+    .button{
+      width: 100%;
+      font-size: 18px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="contenedor">
+
+    <div class="titulo">
+      CONTABILIDAD
+    </div>
+
+    <div class="columns is-vcentered">
+
+      <div class="column is-4">
+
+        <div class="perfil">
+
+          <div class="foto">
+            <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBwgHBgkIBwgKCgkLDRYPDQwMDRsUFRAWIB0iIiAdHx8kKDQsJCYxJx8fLT0tMTU3Ojo6Iys/RD84QzQ5OjcBCgoKDQwNGg8PGjclHyU3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3N//AABEIAJQAlAMBIgACEQEDEQH/xAAbAAABBQEBAAAAAAAAAAAAAAAEAAMFBgcBAv/EAEEQAAIBAwIDBQUEBgoCAwAAAAECAwAEEQUhEjFBBhMiUWEUcYGRoSMyscEHQlJy0fAVJDNDU2JzkrLhFtIlY6L/xAAYAQEBAQEBAAAAAAAAAAAAAAACAQADBP/EAB8RAAICAwEBAQEBAAAAAAAAAAABAhEDEiExQSIyE//aAAwDAQACEQMRAD8AsGvxd5acP+Rc/IVRRbH2htq0TVUzER/kX8BVVjtv6w21cRIjxblVzimUuISCCrgg4Phqwm2+zO1RkNsO6bYfeqRjZWwYSQthRnJ6FTXQYjvg+6j47Yd6uw+VOpaD7U8I/s/KlqibMi1CMQq7np617Nt6U9bWI/pGHwjmenoalzaAbnlRkqKnZSJb9RexxSoZhE5Zow2OLB8OaOTW1Zir6Fxq3MCPn59KI1bUdC7KXSRjTLi4eeP2jv8AvQOPi36/yKM1XWrPSNNttUSzmuUumXERbgNvlcgE43J6V2dv4OOqRXEvkSOWJY3Dd5wqHOSg5+/0o8QL+yM+lTNg+k9qezUupX2mmy7tnCSxElmZeWD1GefurPHgMGqrDFNIyiUbk4z8OVSTsKi134Wv2fAzimU4ZJeAc/fUrcwHgUA43oVLCb2gEDEf7Q51yijN0Nez+n1rns/oKNNk/SZ/lSW2Zupq6sOwAYTXhomHU1Jm1P7VMJCQWBOa1NFUiOKvnmaVGtDvSo2Iv093bXUY9nuInHAvJwegqJhh+3J6VTUVlRSCR4Ry91XLSIuBYhkniQHJPpVsIa0Q7o1GWsP2HxP41OSJ9i3uqNtFBt6cPAyG0i+2GPX8Keji8MvuApxE4WGfI/gaKtIQ4l94pBsjraE/0hCd+R6ehqW7jeuJbgXkZA86kBDvyoS9FEz3tAsUZ9jvLGK6EcheHvM+HJzt6elNS6jb3cD2TWxmkCkGORQUkHqP5x0p7tu//wAsbd34eJc8WSCoBA/OoqHvBMYzCCpGO84t/nRbf09uNxaJ6C9jfS3jdUt4FhKtENlRRzqiQcNxr8Jj+41yODHlVgBjEc1oJMqVYFs8sjqfhUJ2eWNu0FgC44RKrEnbarBNtsGZpLVF+1KJYYS5BwCOXvFcimh2+98RUjrUUclsojZW4nH3TnrQTWoXhIHnSS4eV+nh3hkZQMZz5VxFiwBxrzPWvMUWbiMY/WpCEnp1Jq0Qd7pM7MPnQywZUkbjNe+4OGIGNqLtIf6muN9s/wA/OpJcMvSJeHxGu0ZKgDkEUq5nQqmmoe7csScKMDNaDp8fCsG390v4UBp3ZExwAyXIw6rnO2NqMju0g4UQqyr4M8Xl1pV0JJTDEDe6oq1U+yr61IS3MTROqsCcbAb5oG3LLbqvdS5HlE38KcECR634j+634GiLPPCx4iM0x48nEE/Ij+yby91EQOsULNLHKoXJOYmG3yp0EE1DW7HSLtHvJjsnF3a7sfLbpVO1v9IOp3qPHp7RWULbfZn7THvNVLV9Wk1PVrm6kfPeFuDyA6D5UHFB7THLMM91FwhiPU4A+OKeqSKg57i877v+6mkLqQ3eycfeA/Km5tbRZBlJFKnxITTd692xAuGkHhGBIWzjpzoMwnPIZ86jgn8GpuPESsFzc3rhd7e0lbDyAcTY6bU/OlvZXEscwjeNTjijzlWHQHmPKgNNLrKsCuU7xgAf2TkVa+0fZ+6NnFeXNzbF5eN2EacIyOZO3MgeZrokotag/p0/SGsNauoSJknAHFlYzvgdMnrVn07tLdX6iELAZeYYjGao98xtbaO2wAeLOcc/5NedNu5La5jmjPCVYEUsuNRdAxytWaK0upO2e+tUI323rzi/P3tRVfclKPTdcugJPZiquMgtIBz91eB2Z1xj4mgx/qmuFC2OlLnh4m1Jsekf/dJWuEA4dTbhHRlxTg7P6yqFB7Pg/wD2n+Fe7bszfSTKl8yC3bZzHJ4sem1Zo2xy21m3KEXPC8itjjU7N61yrBD2J0y5hjLTSIY14PEBk46/WlR0N/qi7W0NrHbQn2aAfZqcsg8vWnkmiG0SxjPIIoP0FY9/5JrjxoBqRgAUACC3jXp5lSfrQk17f3LE3OrapKT0a+lC/wC0MB9K6aks3HvnA3RwB1MZH5Uy+pQp/aXEadPFIo/OsBubaBpwXjEhK5zJ4z9a41vAVx3MW248A2q0Wzef6esEOH1G0BHncx/+1RHbHtLaQ9ktZe21C1eUWUixqk6MeIrgbA55msvVI8ZVFAO42qP7R8KaJcEKATwjIHqK2pCiPJ4sKMb1I6WOO5t7V2MbSuBxnlGD+t/306b1FTCpfTPZpLFDeG4fBIVVIwQCNh5daokWftRBphtIrvTET2hCI3HeGTvB0O/I+eKgoGRl4ZYo1z1TnQOorbwTcVi0rRc8kAMnoabjuHK5LcQP6r43+NdoSSOUkw9JYrW/ifOQHB3O3OrjrWv295pj2iSwTcCOkfcjDAsMc+vXnVFl9l9niWFCJMBzk5Bz0x0xXtpFjLAfff72/wBTWhGMnt4kZtw6vRvXLzvnjGNwdjnJx60JbMSefPl6UtQJYxSeYwffXLb9UflUyyudsWONRpG96Hdpc6LYyh18UCfeODnFFmWP/HT/AHCqR2et9QPZm2uxBN7KCyCVFzjBI5UZEwmUmK8d8cwAMj4Vw3M4Fp9phzvMmPfXGuLcDaZPnVXIOcNJLv610xxqpZpZcAb+OtubQsovo12E4+dKqbHB7QDIDhSdstvilU3L/miNi+4v7op3lTCOoQZYDwjmabkv7SIHvLmFfRnApko93B+2H7tcztQwvba5m47eVHQLgsOVe/aIc471M+XEKwiQt3zEo/Z8NNanai9sngLEAkGhWv7ezBaeQKrHIJBOflTtpqdnetLFazcZWMs32bAAcs5I9ak3SLFXIqOoaO9vxEzg4JHL1A/Oio7VbWwgR0eR3+123wMDbFO6nJkSRtyTl0rxf3a3EQubFSqwFEIOOXL8RQxts65ElxAepmOO4Ci3kR+EZBXBzTK28kzJ3oNurnCNINj7hzNSXtLyage8TDnBeRCM7kDqPNqjbY8DwXV25YTOMlt24QfEfy+dOcndHOMeD1xCtswX2pCeHnsD+JocNGp2Znc88A4PzojVbeS3unclGhmcvE6HiVgdxv6UV3UFzpME8ClbqBmimUDPGoGQw9cHf3HyrOfDaANzwmJckN4gRv64IqyaLaWhaIskaqckkjcHyBqqyyH2dosct1P7Iqa0kkiArsWwFbJ57b0czbVoeBJPpufYXVLKKwXTFuYjdqWdoAfHwknB4OZHLcZo7VOy+jav9uI/ZrjpPbEDf1HI1iPau3uGms5UupY0CcShBwlXXbiB6bEVO9nv0hatpvBFqROoRAfeYhZQP3uTfEfGjHwk1+mWvUuzeq6ehYRHUrYf3tuPtVHqnX4VX3jS4DJbzqdiGWTwMp8iDWgdnO2Ola5kWVx9so8cDrwSp706j/MpIo/UtJ0rWl47u3RnI8M0Rw3zH51QmdwaVfGFOGNVGOTPSqxS9hbpHIstWxD+qJMgj5bUqvDGGLaQug4wz/vsTXtbeBMcMSfKtBj/AER6m8KOe0FiAwDD7Nv4U4n6Jb4Hx9orI+ndPU6YzueOOWPgZBw5zimBbW427lMe4Vpkv6JLmRcf+Q2Sb8xC/wDGm2/RPdLJHGmu2j8efF3L4XHx/nFYxmNpKsck0YBKYyinoR5VYOy1wshvZJEOOEIuNvPNWhP0NX6SB17Qacd8kGFxQt12YuOx5EE91Bdd8DLm3yAANsHIozfB4/6KzrSIschHIAZNQ2nk91KhHFG/AXTiwDgn67/WrJHpl12g1iHR7Uxxyzo32kxwqgAkk46dPiKFuNBm0rUp9OkkjzbDhluIzlCVXiPqdiPjSxVRsnZcAYplSZ7wQrLyRImfnwsCeI+WB9adv797+zWBNBSBY/7OSEt4aV4bxbIRyILW3bxQWwHibfmzH6+dRjtOpHHcSqf8OJiNvnVcbdsKlSpBNjNcQRvbXFuhtZdmSZsAZP3lPQinUSOxmnRmaYcDFZI2/s3UEqwx8c9N+tDQyTBGjI4jkMsfMEj9o0ZAJbvUjcqkatI5yAPBuPEMeWM09Lf5DvS6C6sO8RLniXjuEw6BslWA3z9Kk+zfGbdAwAAYDxdDTWsaVIzRi3iJklPcRRjqQfP1BFGW2nahpE8bX1pLFHI4CNJjhY8O+4PMUc8HHjHhkpMltaX2rT4XbiUpJjIPn/IoDRNEGr6vback7Rmd+HvCc8I3JOPcKL1Lv50jtoUZ2P3UjGSTtyo/sDZXsPaVmmglt3isZ5Y2nQoA+Ao3P79csb/IsqqZrfZrsxoPZyFEsYe8l+89xKvFK588nl8KnHkgUEsqrnc8RArJ9Kte0UFzHLrXaaylhGOOL24jOx6gVPT6npsa8L6r2fU+c3eXB+rikcy5sVJyBt76VVe07W6LHFw3OsRzvnZ4bMooHkBk/jSrGLHbOvskH+mv4V7LLUbbXB9mhGT9xfwpzvT5UrIG8QrxMyhOPqni+HX6ZobvT5Vxpdjkbcq1moMYrk1QP0kx8d5bMF4h3DDAOP1quEc5MSZ3IGD7xt+VU7t0/eXNsqg94YmHhGSRnyoT8OmJfor36O1tob3VdVu5e7ZYPZoX6qW8TN/xxVOvkWe9FxPqjDuyDOwDTZYdc4GcnFWsXo03sRcILNRI8jIszDcOxwCD1K4+lUpXliZ2DeJ14XyqkEdRjGKUKokv6YJfCfvWaS7lmVjkScIwR89vdXlHVV8KjbmY1Ab6nlRChkVlSRlDYBAxvSCgEeMgj3V2Ukjnq/ongjhkjW3LyOMB1ZgNzuCMdMbe8UXDO1rPHK1uRMH4lKyqOmwwQRjzHWhkuLiOTijuGG2M8CHA+XurizTZZmncseZIX+FJTioNfSSjK7XhMXtxNfcNwkMhuml77InBUkfq8HDwg/wrTu1GjWuqdj3e1tlhuoUS6hCjHiXdlwPNSwrHI7uVFKCVxnc4OM/Ktb7Ma0dQ7Ow3LZLxIYphjnw9fiK55XFuxR2XpAdlpI5u0ujyRt92dc8PqK0/tJokGu2MlvdXNzGWheESRsCVV8cQ3G/3R8qovZfR9O723udO16wma3bjNupwyrnPDjmSKuC6k13AjQhgrjO29cIUlR1yPZ2Uo/ol7O22Tcajqc48g6ID/wDk1G33YmztCo0aedVPMScLkfHH5VfLkSSjhy1e7SxXIL0rBRSLXsZfPCGOr3iHyVY8f8a7WnRJCqAcIrtYhEwX0Itovto/uL19K6dRt+svyBoC3s19ni/cX8KeW0SgKkP/ANJW/Rmb4V5OqQjkrk15FqtL2Ra3S8GF1VAZFEL7NkYPnUD2il9skgfDxqMq2ObdQPd6VPm3AnI55TPyNR2t2TtYv3DYlj8a+uOfxxUldChVlE7Z+1HR7aS1hLxws0kmP7scgx+tUiOWRd3JyRkZ6jzrVbK6guoXtLgjvghyHGzDzqr9uXs2s7OS2S1UBVR2hjCnOOR2pY3weaH6Ks14VByBQz3ZZueBTUh4j4eVMPkcq7HAk4bgYOQwBGCVp9SrL4HJHqN6ioJHU5HTzNSMUyOMrjPWsY9tyzyq3dg7qWGyuCqsRNKSmdhsACR+FQ2j2tvccbXa8cZ8AUOFIJ6/XarXpXBZ6BFEzcTIzgD9o5IFccrtUdsC/aZwaamq6ykzlkeFePvIxhh0A929W6E3EaKiSyKoGAAxpjRLF4rfvZxxTy4Ljy8hUzHAKEVwmRpyBFa6P99J/up5Guxynk/3GjY4Fp5YB1FWgWAcd3/jy/7jSqQ4EG3CaVWjAVu49ni/cX8KdElAwN/V4v3F/CneKpZqCTJXO8pjipcVazUdlkxNER1DD6Z/I03KwIKkbcq8TtgxN+zIPqCv51yTlitZUiAu+zunSzidRJE4PF4JCN/QVj+pSzTXc4umkDd63FHxbBgdwBW7SVivaWL2fXtQiYgkTk59/iH40oemk2yHKgb5+NeOBndQNySBtTxx8aK0K39p1iBOiEu3uH/eK7AGby1FvdvERgDBHyrxwKMEEg+YG9Tvau37q6t5QB9pHgn1BqFFROzHcceA+5PIVrPZ3Qktra17/cRxjgQcgx5k1lcG7qAM5YbfGtwtBwwxgjBCDb4VzyIcG14HxE9aKjag0NPoaBqDUenVeglenBJVDQYGpUL3tKsaiOgQezxfuL+FO8IFKlUEKlSpVijNx9xf9SP/AJCuuKVKoYYesc7bADtTqOOsi/8AAUqVOAZECanexMatqdwxG6wbfEj+FKlXWXgUSPbdAILIgb8Tj6CqstKlUj4Vkl2fhS41qxhkzwPOgOPeK2aPnSpUMhYhC08tKlXMQ4K6DSpVTHc0qVKsY//Z" alt="Foto usuario">
+          </div>
+
+          <div class="field" style="width: 100%;">
+            <label class="label has-text-centered">Nombre del Usuario</label>
+            <div class="control">
+              <input class="input is-primary"
+              type="text"
+              placeholder="Ingrese nombre">
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="column is-8">
+
+        <div class="box box-formulario">
+
+          <h2 class="title is-3 has-text-primary">
+            Ventas
+          </h2>
+
+          <div class="field">
+            <label class="label">Fecha</label>
+            <div class="control">
+              <input class="input is-info" type="date">
+            </div>
+          </div>
+
+          <div class="field">
+            <label class="label">Ingresos</label>
+            <div class="control">
+              <input class="input is-success"
+              type="text"
+              placeholder="Ingrese ingresos">
+            </div>
+          </div>
+
+          <div class="field">
+            <label class="label">Egresos</label>
+            <div class="control">
+              <input class="input is-danger"
+              type="text"
+              placeholder="Ingrese egresos">
+            </div>
+          </div>
+
+          <div class="field">
+            <label class="label">Concepto</label>
+            <div class="control">
+              <textarea class="textarea is-warning"
+              placeholder="Ingrese el concepto"></textarea>
+            </div>
+          </div>
+
+          <div class="field">
+            <label class="label">Valor</label>
+            <div class="control">
+              <input class="input is-link"
+              type="number"
+              placeholder="Ingrese valor">
+            </div>
+          </div>
+
+          <div class="field mt-5">
+            <div class="control">
+              <button class="button is-primary is-medium">
+                Guardar
+              </button>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</body>
+</html>
+
+
+
+
+<!--
+ventas
+fecha
+ingresos
+egresos
+concepto
+valor
+-->
+
+<!--crear rama -> git branch modify_module_contabilidad
+se cambia de rama con -> git checkout modify_module_contabilidad
+todas las modificaciones del formulario con estilos-->
