@@ -1,0 +1,59 @@
+body {
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #a3a3a3;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.form-box {
+    width: 360px;
+    padding: 30px;
+    background: #111111;
+    border-radius: 14px;
+    box-shadow: 0 0 20px rgba(255, 254, 254, 0.12);
+}
+
+.form-title {
+    color: #ffffff;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 1.6rem;
+}
+
+.form-box .label {
+    color: #dcdcdc;
+    font-weight: 600;
+}
+
+.form-box .input,
+.form-box .select select,
+.form-box .button {
+    background: #1d1d1d;
+    color: #f4f4f4;
+    border: 1px solid #333333;
+}
+
+.form-box .input:focus,
+.form-box .select select:focus {
+    border-color: #6c63ff;
+    box-shadow: 0 0 0 0.2rem rgba(108, 99, 255, 0.2);
+}
+
+.form-box .select,
+.form-box .field.has-addons .control {
+    width: 100%;
+}
+
+.form-box .field.has-addons .button.is-static {
+    background: #1d1d1d;
+    border-color: #333333;
+    color: #f4f4f4;
+}
+
+.form-box .control,
+.form-box .field {
+    margin-bottom: 15px;
+}
