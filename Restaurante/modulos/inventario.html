@@ -5,23 +5,30 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.4/css/bulma.min.css" />
     <link rel="stylesheet" href="../css/inventario.css">
     <title>Document</title>
-  
+  <script src="../js/inventario.js"></script>
 </head>
 
 <body>
     <div class="form-box">
         <div class="field"> <label class="label">Codigo del producto</label>
-            <div class="control"> <input class="input" type="text" placeholder="Codigo" /> </div>
+            <div class="control"> <input class="input" type="text" placeholder="Codigo" id="codigo" /> </div>
         </div>
         <div class="field"> <label class="label">Nombre del producto</label>
-            <div class="control"> <input class="input" type="text" placeholder="Nombre" /> </div>
+            <div class="control"> <input class="input" type="text" placeholder="Nombre" id="nombre" /> </div>
         </div>
         <div class="field"> <label class="label">Cantidad de productos</label>
-            <div class="control"> <input class="input" type="text" placeholder="Cantidad" /> </div>
+            <div class="control"> <input class="input" type="text" placeholder="Cantidad" id="cantidad" /> </div>
         </div>
         <div class="field"> <label class="label">Marca del producto</label>
-            <div class="control"> <input class="input" type="text" placeholder="Marca" /> </div>
+            <div class="control"> <input class="input" type="text" placeholder="Marca" id="marca" /> </div>
         </div>
+
+                       <div class="field">
+                    <div class="control">
+                        <button class="button is-primary" type="submit">guardar</button>
+                    </div>
+                </div>
+
 
                   <div class="field mt-5">
             <div class="control">

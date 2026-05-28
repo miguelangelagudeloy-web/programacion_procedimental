@@ -1,0 +1,9 @@
+let nombre = document.getElementById("nombre").value;
+let apellido = document.getElementById("apellido").value;
+let numero_documento = document.getElementById("numero_documento").value;
+let tipo_documento = document.getElementByName("opcion selected[tipo_documento]").value;
+let telefono = document.getElementById("telefono").value;
+let correo = document.getElementById("correo").value;
+let cargo = document.getElementById("cargo").value;
+let contrasena = document.getElementById("contrasena").value;
+let genero = document.getElementByName("opcion selected[genero]").value;

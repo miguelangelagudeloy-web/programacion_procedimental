@@ -6,115 +6,101 @@
       href="https://cdn.jsdelivr.net/npm/bulma@1.0.4/css/bulma.min.css"
     />
     <link rel="stylesheet" href="../css/usuario.css">
+    <script src="../js/usuario.js"></script>
     <title>Document</title>
 </head>
 <body>
-    <!--nombre
-    apellido
-    tipo de documento
-    numero de documento
-    telefono
-    correo electronico
-    genero
-    cargo
-    fecha de nacimiento
-    contraseña-->
-<<form class="formulario">
-
-<div class="control">
+<form class="formulario">
+  <div class="field">
     <label class="label">Nombre</label>
-    <input class="input" type="text" placeholder="nombre">
-</div>
+    <div class="control">
+      <input class="input" type="text" placeholder="Nombre" id="nombre">
+    </div>
+  </div>
 
-<div class="control">
+  <div class="field">
     <label class="label">Apellido</label>
-    <input class="input" type="text" placeholder="apellido">
-</div>
-
-<div class="field">
-  <label class="label">Tipo de documento</label>
-  <div class="control">
-    <div class="select is-fullwidth">
-      <select>
-        <option>C.C</option>
-        <option>T.I</option>
-        <option>Otro</option>
-      </select>
+    <div class="control">
+      <input class="input" type="text" placeholder="Apellido" id="apellido">
     </div>
   </div>
-</div>
 
-<div class="control">
-  <label class="label">Numero de documento</label>
-  <input class="input" type="number" placeholder="numero de documento">
-</div>
-
-<label class="label">Telefono</label>
-<div class="field has-addons">
-  <p class="control">
-    <a class="button is-static">
-      +57
-    </a>
-  </p>
-
-  <p class="control is-expanded">
-    <input class="input" type="tel" placeholder="Tu telefono">
-  </p>
-</div>
-
-<label class="label">Correo electronico</label>
-
-<div class="field has-addons">
-  <p class="control is-expanded">
-    <input class="input" type="text" placeholder="tu correo">
-  </p>
-
-  <p class="control">
-    <a class="button is-static">
-      @gmail.com
-    </a>
-  </p>
-</div>
-
-<div class="field">
-  <label class="label">Genero</label>
-
-  <div class="control">
-    <div class="select is-fullwidth">
-      <select>
-        <option>Masculino</option>
-        <option>Femenino</option>
-      </select>
+  <div class="field">
+    <label class="label">Tipo de documento</label>
+    <div class="control">
+      <div class="select is-fullwidth">
+        <select id="tipo_documento">
+          <option>C.C</option>
+          <option>T.I</option>
+          <option>Otro</option>
+        </select>
+      </div>
     </div>
   </div>
-</div>
 
-<div class="control">
+  <div class="field">
+    <label class="label">Número de documento</label>
+    <div class="control">
+      <input class="input" type="number" placeholder="Número de documento" id="numero_documento">
+    </div>
+  </div>
+
+  <div class="field">
+    <label class="label">Teléfono</label>
+    <div class="control">
+      <input class="input" type="tel" placeholder="Teléfono" id="telefono">
+    </div>
+  </div>
+
+  <div class="field">
+    <label class="label">Correo electrónico</label>
+    <div class="control">
+      <input class="input" type="email" placeholder="Correo electrónico" id="correo">
+    </div>
+  </div>
+
+  <div class="field">
+    <label class="label">Género</label>
+    <div class="control">
+      <div class="select is-fullwidth">
+        <select id="genero">
+          <option>Masculino</option>
+          <option>Femenino</option>
+          <option>Otro</option>
+        </select>
+      </div>
+    </div>
+  </div>
+
+  <div class="field">
     <label class="label">Cargo</label>
-    <input class="input" type="text" placeholder="cargo">
-</div>
+    <div class="control">
+      <input class="input" type="text" placeholder="Cargo" id="cargo">
+    </div>
+  </div>
 
-<div class="control">
+  <div class="field">
     <label class="label">Fecha de nacimiento</label>
-    <input class="input" type="date">
-</div>
+    <div class="control">
+      <input class="input" type="date" id="fecha_nacimiento">
+    </div>
+  </div>
 
-<div class="control">
+  <div class="field">
     <label class="label">Contraseña</label>
-    <input class="input" type="password" placeholder="contraseña">
-</div>
+    <div class="control">
+      <input class="input" type="password" placeholder="Contraseña" id="contrasena">
+    </div>
+  </div>
 
-<button class="button is-primary btn-registrar">
-    Registrar
-</button>
-          <div class="field mt-5">
-            <div class="control">
-              <a class="button is-primary is-medium" href="../index.html">
-                volver al inicio
-              </a>
-            </div>
-          </div>
-
+  <div class="field is-grouped">
+    <div class="control">
+      <button class="button is-primary btn-registrar" type="submit">Registrar</button>
+    </div>
+    <div class="control">
+      <a class="button is-light btn-volver" href="../index.html">Volver al inicio</a>
+    </div>
+  </div>
 </form>
 
 </body>
