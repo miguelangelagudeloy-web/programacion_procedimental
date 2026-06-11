@@ -1,4 +1,4 @@
-
+console.log("Hola mundo");
 
 let nombre = document.getElementById("nombre").value;
 let apellido = document.getElementById("apellido").value;
@@ -15,19 +15,19 @@ function ValidarResgistro() {
 console.log("Todos los campos son obligatorios" )
 }
 else {
-    if (nombre != /[0-9]/ && apellido != /[0-9]/) {
+    if (nombre != /[a-zA-Z]/ && apellido != /[a-zA-Z]/) {
         console.log("El nombre y el apellido no pueden contener números")
     }
-    if (numero_documento != /[a-zA-Z]/) {
+    if (numero_documento != /[0-9]/) {
         console.log("El número de documento no puede contener letras")
     }
-    if (telefono != /[a-zA-Z]/) {
-        console.log("El número de teléfono no puede contener letras")
+    if (telefono.length >= 10) {
+                console.log("El número de teléfono debe tener al menos 10 dígitos")
     }
     if (correo != /[@]/) {
         console.log("El correo electrónico debe contener un @")
     }
-    if (cargo != /[0-9]/) {
+    if (cargo != /[a-zA-Z]/) {
         console.log("El cargo no puede contener números")
     }
     if (contrasena.length < 8) {
@@ -36,3 +36,17 @@ else {
 }
     
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
