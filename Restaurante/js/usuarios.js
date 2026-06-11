@@ -16,10 +16,10 @@ console.log("Todos los campos son obligatorios" )
 }
 else {
     if (nombre != /[a-zA-Z]/ && apellido != /[a-zA-Z]/) {
-        console.log("El nombre y el apellido no pueden contener números")
+        console.log("El nombre y el apellido deben contener letras mayusculas y minusculas")
     }
-    if (numero_documento != /[0-9]/) {
-        console.log("El número de documento no puede contener letras")
+    if (numero_documento.length == 10) {
+        console.log("El número de documento debe tener al menos 10 dígitos}")
     }
     if (telefono.length >= 10) {
                 console.log("El número de teléfono debe tener al menos 10 dígitos")
